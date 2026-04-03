@@ -1,11 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lang="ar">
 <head>
-  <title>Test</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مدرسة دواة جديدة الخاصة</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      direction: rtl;
+      margin: 0;
+      background: #f5f5f5;
+    }
+
+    header {
+      background: #1e3a5f;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    nav {
+      text-align: center;
+      background: #2c4a7a;
+      padding: 10px;
+    }
+
+    nav button {
+      padding: 10px 15px;
+      margin: 5px;
+      border: none;
+      border-radius: 5px;
+      background: white;
+      cursor: pointer;
+    }
+
+    .section {
+      display: none;
+      background: white;
+      margin: 20px;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .active {
+      display: block;
+    }
+
+    img {
+      width: 200px;
+      margin: 10px;
+      border-radius: 10px;
+    }
+
+    input, textarea {
+      width: 80%;
+      padding: 10px;
+      margin: 10px;
+    }
+
+    button.submit {
+      background: #1e3a5f;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+    }
+  </style>
 </head>
-<body style="background: red; color: white; font-size: 40px; text-align: center;">
 
-  الموقع يخدم 🎉
+<body>
 
-</body>
-</html>
+<header>
+  <h1>🏫 مدرسة دواة جديدة الخاصة</h1>
+</header>
+
+<nav>
+  <button onclick="show('home')">الرئيسية</button>
+  <button onclick="show('gallery')">📸 الصور</button>
+  <button onclick="show('register')">📝 التسجيل</button>
+  <button onclick="show('contact')">📞 اتصل بنا</button>
+</nav>
+
+<!-- الرئيسية
