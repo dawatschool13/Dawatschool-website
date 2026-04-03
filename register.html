@@ -3,82 +3,27 @@
 <head>
 <meta charset="UTF-8">
 <title>التسجيل</title>
-
-<style>
-body {
-  font-family: Arial;
-  text-align: center;
-  background: #f5f7fb;
-}
-
-input {
-  padding: 10px;
-  margin: 10px;
-  width: 250px;
-}
-
-button {
-  padding: 10px 20px;
-  background: #1e3a5f;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-#msg {
-  margin-top: 15px;
-  font-weight: bold;
-}
-</style>
 </head>
 
-<body>
+<body style="font-family:Arial; direction:rtl; text-align:center; background:#f4f7fb;">
 
 <h1>📝 تسجيل جديد</h1>
 
-<form id="form">
+<form action="https://formsubmit.co/ecole.dawat2022@gmail.com" method="POST">
 
-<input type="text" name="name" placeholder="الاسم" required><br>
-<input type="text" name="lastname" placeholder="اللقب" required><br>
-<input type="text" name="address" placeholder="العنوان" required><br>
-<input type="text" name="year" placeholder="السنة الدراسية" required><br>
-<input type="text" name="average" placeholder="المعدل" required><br>
-<input type="tel" name="phone" placeholder="الهاتف" required><br>
-<input type="email" name="email" placeholder="الإيميل" required><br>
+<input type="text" name="الاسم" placeholder="الاسم" required><br><br>
+<input type="text" name="اللقب" placeholder="اللقب" required><br><br>
+<input type="text" name="العنوان" placeholder="العنوان" required><br><br>
+<input type="text" name="السنة الدراسية" placeholder="السنة الدراسية" required><br><br>
+<input type="text" name="المعدل" placeholder="المعدل" required><br><br>
+<input type="tel" name="الهاتف" placeholder="الهاتف" required><br><br>
+<input type="email" name="الإيميل" placeholder="الإيميل" required><br><br>
+
+<input type="hidden" name="_captcha" value="false">
 
 <button type="submit">إرسال</button>
 
 </form>
-
-<p id="msg"></p>
-
-<script>
-document.getElementById("form").addEventListener("submit", function(e){
-e.preventDefault();
-
-fetch("https://formsubmit.co/ajax/ecole.dawat2022@gmail.com", {
-method: "POST",
-headers: { "Content-Type": "application/json" },
-body: JSON.stringify({
-name: this.name.value,
-lastname: this.lastname.value,
-address: this.address.value,
-year: this.year.value,
-average: this.average.value,
-phone: this.phone.value,
-email: this.email.value
-})
-})
-.then(() => {
-document.getElementById("msg").innerText = "✅ تم الإرسال بنجاح";
-this.reset();
-})
-.catch(() => {
-document.getElementById("msg").innerText = "❌ خطأ في الإرسال";
-});
-});
-</script>
 
 </body>
 </html>
