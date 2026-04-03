@@ -1,1 +1,44 @@
 
+body {
+  font-family: Arial;
+  direction: rtl;
+  margin: 0;
+  background-color: #f5f7fa;
+}
+
+header {
+  background: #1e3a5f;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero {
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  color: white;
+  text-align: center;
+  padding: 50px;
+}
+
+section {
+  background: white;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+}
+
+footer {
+  background: #1e3a5f;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
